@@ -1,0 +1,14 @@
+<div class="chat-wrapper">
+  <div class="chat-area" #chatArea>
+      <app-message-block *ngFor="let msg of messages"
+                         [username]="'Putin'"
+                         [sentTime]="msg.sentTime"
+                         [text]="msg.text">
+      </app-message-block>
+  </div>
+  <div class="type-message">
+    <input type="text" class="message-input" placeholder="Message" id='message-text-input'
+           [formControl]="messageTextControl" (keyup.enter)="pushMessage()" />
+    <label for="message-text-input" class="message-input-label">Message</label>
+  </div>
+</div>

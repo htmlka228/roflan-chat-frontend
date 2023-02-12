@@ -1,0 +1,18 @@
+.users-bar {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  border-right: 2px solid black;
+  overflow-y: scroll;
+}
+
+.user-bar-header {
+  margin: 10px 0;
+  font-weight: 500;
+  text-align: center;
+  font-size: 20px;
+}
+
+.user-bar-block {
+  margin: 10px 10px;
+}

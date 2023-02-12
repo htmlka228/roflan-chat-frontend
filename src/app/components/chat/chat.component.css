@@ -1,0 +1,74 @@
+.chat-wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.chat-area {
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  flex: 25 1 0;
+  background-image: linear-gradient(#7499C4, #DFA5A7);
+}
+
+.type-message {
+  flex: 1 1 0;
+}
+
+/*message input styles*/
+
+.type-message {
+  position: relative;
+  padding: 15px 0 0;
+  margin-top: 10px;
+  margin-bottom: 4px;
+}
+.message-input {
+  width: 100%;
+  border: 0;
+  border-bottom: 2px solid #9b9b9b;
+  outline: 0;
+  font-size: 1.3rem;
+  color: black;
+  padding: 7px 5px;
+  background: transparent;
+  transition: border-color 0.2s;
+}
+.message-input::placeholder {
+  color: transparent;
+}
+.message-input:placeholder-shown ~ .message-input-label {
+  font-size: 1.3rem;
+  cursor: text;
+  top: 20px;
+}
+.message-input-label {
+  position: absolute;
+  top: 0;
+  display: block;
+  transition: 0.2s;
+  font-size: 1rem;
+  color: #9b9b9b;
+  padding-left: 5px;
+}
+.message-input:focus {
+  padding-bottom: 6px;
+  font-weight: 300;
+  border-width: 3px;
+  border-image-slice: 1;
+}
+.message-input:focus ~ .message-input-label {
+  position: absolute;
+  top: 0;
+  display: block;
+  transition: 0.2s;
+  font-size: 1rem;
+  color: cornflowerblue;
+  font-weight: 500;
+}
+/* reset input */
+.message-input:required, .message-input:invalid {
+  box-shadow: none;
+}

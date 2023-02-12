@@ -1,0 +1,25 @@
+.message-block {
+  border-radius: 10px;
+  margin-right: 5px;
+  margin-bottom: 10px;
+  padding: 5px;
+  text-align: right;
+  background: white;
+}
+
+.username {
+  font-weight: 500;
+  color: cornflowerblue;
+  margin-right: 10px;
+}
+
+.sentTime {
+  font-style: italic;
+  color: gray;
+  margin-right: 5px;
+}
+
+.text {
+  font-size: 16px;
+  margin-right: 5px;
+}

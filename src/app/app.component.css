@@ -1,0 +1,13 @@
+.container {
+  display: flex;
+  flex-direction: row;
+}
+
+app-user-bar {
+  flex: 1 1 0;
+}
+
+app-chat {
+  flex: 6 1 0;
+}
+
